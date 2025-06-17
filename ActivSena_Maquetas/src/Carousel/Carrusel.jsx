@@ -42,7 +42,7 @@ const goToSlide = (sliderIndexx) =>{
 
   return (
     <>
-    <h1>Feedback De Eventos</h1>
+    <h1 className="text-center-slider">Feedback De Eventos</h1>
     <div className='main-container'>
         
       <div className='slider-container'>
@@ -53,7 +53,7 @@ const goToSlide = (sliderIndexx) =>{
                 {
                     data.map((item) =>{
                         return <li key={item.id}>
-                            <img src={item.imgUrl} width={700} height={400}/>
+                            <img src={item.imgUrl} width={500} height={280}/>
 
                         </li>
                     })

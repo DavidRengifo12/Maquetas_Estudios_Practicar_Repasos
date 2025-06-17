@@ -4,6 +4,12 @@ li {
   white-space: nowrap;
 }
 
+.text-center-slider{
+  text-align: center;
+    font-weight: 400;
+    padding: 2rem 0;
+}
+
 li {
   display: inline;
 }
@@ -23,7 +29,7 @@ img {
 /* Slider container */
 .slider-container {
   position: relative;
-  height: 110%
+  height: 100%
 }
 
 /* dots carrusel */
