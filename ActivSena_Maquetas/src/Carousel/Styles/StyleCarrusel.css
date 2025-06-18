@@ -18,10 +18,10 @@ img {
   margin-top: -16px;
 }
 
-/* Main container */
+
 
 .main-container {
-  width: 500px;
+  width: 500px; /*Si quiero ver el tamaño de las imagenes y eso modifico aqui y en la principal que tiene los mismos ancho y altura*/
   height: 280px;
   margin: 0 auto;
 }
@@ -45,7 +45,7 @@ img {
   text-align: center;
 }
 
-/* Arrows */
+/* Flechas  */
 .leftArrow {
   position: absolute;
   top: 50%;
@@ -53,7 +53,7 @@ img {
   left: 32px;
   font-size: 50px;
   font-weight: 700;
-  color: #fff;
+  color: blue;
   z-index: 1;
   cursor: pointer;
 }
@@ -65,7 +65,7 @@ img {
   right: 32px;
   font-size: 50px;
   font-weight: 700;
-  color: #fff;
+  color: blue;
   z-index: 1;
   cursor: pointer;
 }
@@ -76,6 +76,12 @@ img {
   border-radius: 20px;
   border: 1px solid #eee;
   overflow: hidden;
+  transition: all 0.6s ease;
+}
+
+.container-images:hover{
+  transform: scale(2.06);
+  filter: opacity(0.6s);
 }
 
 div.active {
@@ -83,5 +89,13 @@ div.active {
   width: 15px;
   height: 15px;
   border-radius: 50%;
+}
+
+@media (max-width: 768px){
+  .main-container{
+    width: 300px;
+  }
+
+
 }
 

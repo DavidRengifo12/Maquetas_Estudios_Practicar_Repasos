@@ -3,9 +3,6 @@ import './Styles/StyleCarrusel.css'
 import { data } from '../assets/data';
 
 
-
-
-
 export default function Carrusel() {
  const listRef = useRef();
  const [currentindex, setCurrentIndex] = useState(0);
@@ -53,7 +50,7 @@ const goToSlide = (sliderIndexx) =>{
                 {
                     data.map((item) =>{
                         return <li key={item.id}>
-                            <img src={item.imgUrl} width={500} height={280}/>
+                            <img src={item.imgUrl} width={500} height={280} /> 
 
                         </li>
                     })
