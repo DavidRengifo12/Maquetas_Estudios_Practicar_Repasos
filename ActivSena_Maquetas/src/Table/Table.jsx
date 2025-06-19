@@ -25,19 +25,19 @@ export default function Table() {
     <>
       <h1 className="tabla-title">Comentarios</h1>
 
-      <div>
+      <div className='scroll-table'>
         <table className="contenedor-tabla">
-          <thead>
-            <tr>
-              <th>Usuarios</th>
-              <th>Comentarios</th>
-              <th>Reseñas</th>
+          <thead className='thead'>
+            <tr className='tr'>
+              <th className='th'>Usuarios</th>
+              <th className='th'>Comentarios</th>
+              <th className='th'>Reseñas</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className='tbody'>
             {Usuarios.map((usuario, index) => (
-              <tr key={index}>
-                <td className='user-cell'>
+              <tr key={index} className='tr'>
+                <td className='user-cell td'>
                   {usuario.imagen ? (
                     <img src={usuario.imagen} alt={usuario.name} className='perfil-img' />
                   ) : (
@@ -45,8 +45,8 @@ export default function Table() {
                   )}
                   <span>{usuario.name}</span>
                 </td>
-                <td>{usuario.comentarios}</td>
-                <td>{usuario.reseñas}</td>
+                <td className='td texto-comentario'>{usuario.comentarios}</td>
+                <td className='td'>{usuario.reseñas}</td>
               </tr>
             ))}
           </tbody>

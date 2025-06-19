@@ -39,18 +39,18 @@ const goToSlide = (sliderIndexx) =>{
 
   return (
     <>
-    <h1 className="text-center-slider">Feedback De Eventos</h1>
-    <div className='main-container'>
+    <h1 className="texto-center-slider">Feedback De Eventos</h1>
+    <div className='main-container-slider'>
         
       <div className='slider-container'>
         <div className='leftArrow' onClick={() => scrollToImage('prev')}>&#10092;</div>
         <div className='rightArrow' onClick={() => scrollToImage('next')}>&#10093;</div>
-        <div className='container-images'>
-            <ul ref={listRef} >
+        <div className='container-imagenes'>
+            <ul ref={listRef} className='ul-slider'>
                 {
                     data.map((item) =>{
-                        return <li key={item.id}>
-                            <img src={item.imgUrl} width={500} height={280} /> 
+                        return <li key={item.id} className='li-slider'>
+                            <img src={item.imgUrl} width={500} height={280} className='imagen-slider' /> 
 
                         </li>
                     })
@@ -68,7 +68,6 @@ const goToSlide = (sliderIndexx) =>{
                     
                  )
             }
-
         </div>
       </div>
     </div>
